@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dunotópolis</title>
+    <link rel="canonical" href="https://www.lanchonete">
+    <link rel="icon" href="www/icons/donut.ico">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="www/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="www/icons/material.css">
+    <link rel="stylesheet" type="text/css" href="www/css/index.css">
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="">
+            <div class="topo-fixo">
+                <a href="#" class="brand-logo">
+                    <!-- Remover a imagem "logo-small" e adicionar uma nova imagem -->
+                    <img src="www/images/Logo-burger.jpg" alt="Nova Logo" class="logo-small">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="main_menu" class="material-icons">menu</i></a>
+            </div>
+
+            <ul class="right hide-on-med-and-down brand-logo">
+                <li><a class="scrollSuave" href="#contact">Contato</a></li>
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="#about">Quem somos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="trabalheconosco.html">Trabalhe conosco</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="welcome"></div>
+    <div id="welcome-black">
+		<div class="Logo-burger">
+			<!-- Adiciona a nova imagem -->
+			<img src="www/images/Logo-burger-central.jpg" alt="Logo Central" class="logo-central">
+		</div>
+		<a class="center btn-down scrollSuave" href="#description"></a>
+	</div>
+
+    <div id="description" class="row valign-wrapper">
+        <div class="col s12 m5 l5">
+            <div class="center text-description">
+                <h2 class="center">Dunotópolis</h2>
+                <p>A Doçura que Você Procura! Na Dunotópolis, transformamos momentos comuns em experiências doces e inesquecíveis. Nossos dunots, feitos com carinho e perfeição, conquistam pelo sabor e pela alegria das cores rosa e azul. E o melhor: por apenas R$3 cada, você pode saborear essa delícia!</p>
+            </div>
+        </div>
+    </div> <!-- end description -->
+
+    <section id="menu-products" class="container">
+        <div class="center">
+            <h2>Cardápio</h2>
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="menu-item item1"></div>
+                    <div>
+                        <h5 class="center">Morango</h5>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">
+                    <div class="menu-item item2"></div>
+                    <div>
+                        <h5 class="center">Chocolate</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- end menu -->
+
+    <div class="divider container"></div>
+
+    <section id="contact">
+        <div class="mapa">
+            <img src="www/images/mapa.jpg" />
+        </div>
+
+        <div class="row linha">
+            <form class="col s12 m4 l4 offset-m4 offset-l4 lb-nome grey darken-3" method="POST" action="https://formspree.io/gleidson@sisout.com">
+                <h2 class="center">Contate-nos</h2>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">person</i>
+                    <input id="name" type="text" class="validate" name="name">
+                    <label for="name">Nome</label>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" name="_replyto">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <input type="hidden" name="_subject" value="Assunto" />
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="textarea" class="materialize-textarea" name="message"></textarea>
+                        <label for="textarea">Mensagem</label>
+                    </div>
+                </div>
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="#contact" />
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button class="btn cyan waves-effect waves-light right" type="submit">Enviar
+                            <i class="mdi-content-send right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s12 m4 l4">
+                    <p class="white-text"><i class="material-icons">location_on</i>Av. Dr. Silas Munguba, 1200. Itaperi</p>
+                    <p class="white-text"><i class="material-icons">smartphone</i>(42) 998486364</p>
+                    <p class="white-text"><i class="material-icons">mail</i>atendimento@dominio.com</p>
+                </div>
+                <div class="col s12 m4 l4 hide-on-med-and-down">
+                    <div class="logo"></div>
+                </div>
+                <div class="col s12 m4 l4 ">
+                    <div class="valign-wrapper">
+                        <div class="">
+                            <ul class="social-medias">
+                                <li><a class="grey-text text-lighten-3 facebook" href="#!">Facebook</a></li>
+                                <li><a class="grey-text text-lighten-3 twitter" href="#!">Twitter</a></li>
+                                <li><a class="grey-text text-lighten-3 instagram" href="#!">Instagram</a></li>
+                                <li><a class="grey-text text-lighten-3 youtube" href="#!">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black">
+            <div class="container">
+                © 2024 Copyright Donuts
+                <a class="grey-text text-lighten-4 right" target="_blank" href="https://sisout.com">sisout</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="www/js/jquery.min.js"></script>
+    <script type="text/javascript" src="www/js/materialize.min.js"></script>
+    <script type="text/javascript" src="www/js/index.js"></script>
+</body>
+
+</html>
